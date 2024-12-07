@@ -100,7 +100,7 @@ if(process === "Edit"){
     name:e.name,
     email:e.email,
     status:e.status,
-    role:e.role
+    role:e.role_name
   }
 setUpdated(populateData);
 }
