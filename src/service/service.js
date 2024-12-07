@@ -31,7 +31,7 @@ return res;
 export const deleteUser = (id) =>{
 
 const index = userData.findIndex((e)=>e.id === id)
-console.log(index);
+
 
 if(index != -1){
 userData[index].is_active = 0;
@@ -44,7 +44,7 @@ else{
 }
 
 export const updateUserData = (data,id)=>{
-console.log(data);
+
 
 if(data.name && data.email && data.status && data.role){
     const index = userData.findIndex((e)=>e.id === id);
@@ -91,7 +91,7 @@ access = e.access_id
 
     }
 })
-console.log(access);
+
 
 if(access){
     return access;
@@ -107,7 +107,7 @@ const newRole ={
 }
 
 permissionByRole.push(newRole);
-console.log(newRole);
+
 if(permissionByRole.length > prevLength){
     return true;
 } 

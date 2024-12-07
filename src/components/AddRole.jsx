@@ -38,7 +38,7 @@ const roleName = roleRef.current.value;
     function CancelFunction(){
 
         const confirm = window.confirm("are you sure you want to cancel this role")
-console.log(confirm);
+
 
         if(confirm) window.history.back()
     
@@ -57,7 +57,7 @@ console.log(confirm);
 
     }
    
-    console.log(access);
+   
     
 
     return(

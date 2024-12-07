@@ -18,7 +18,7 @@ const isValid = userValidate(username,password);
 if(isValid){
   
   const role_id=isValid.role_id;
-  console.log(role_id);
+  
   alert("login successfull");
   
   navigate('/userData',{state:{role_id}})
@@ -70,9 +70,7 @@ else{
           <button type="submit" className="login-btn" onClick={handleSubmit}>Login</button>
        
         <div className="extra-actions">
-          {/* <!-- Uncomment these buttons if needed -->
-          <!-- <button class="link-btn">Create Account</button>
-          <button class="link-btn">Forgot Password</button> --> */}
+         
         </div>
       </div>
     </div>

@@ -50,7 +50,7 @@ useEffect(()=>{
 if(input !=""){ 
   
   const search= statData?.filter((e)=>e.name.toLowerCase().includes(input.toLocaleLowerCase()));
-console.log(search)
+
 setData(search)
 }
 else{
@@ -70,7 +70,7 @@ function accessByRoleId(){
   if(role_id){
 
     const roleNmae =rolenameById(role_id);
-console.log(roleNmae);
+
 setRole(roleNmae)
 
   }
@@ -80,8 +80,7 @@ setRole(roleNmae)
 function deleteUserById(name,id) {
   const isConfirmed = window.confirm(`Are you sure you want to delete ${name}'s account?`);
   if (isConfirmed) {
-const is_deleted = deleteUser(id)
-console.log(is_deleted);
+const is_deleted = deleteUser(id);
   is_deleted ?? alert(`${name}'s account has not deleted.`)   
 setData(fetchAllData)
   } 
@@ -128,7 +127,7 @@ if(is_updated === "notValidRole"){
 }
 
 }
-console.log(data);
+
 
     return(
       <div className="whole">
