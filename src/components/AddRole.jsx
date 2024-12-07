@@ -32,6 +32,9 @@ const roleName = roleRef.current.value;
          } 
 
         }
+        else{
+          alert("You didnt selected any of the role yet.")
+        }
 
 
     }
