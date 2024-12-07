@@ -69,7 +69,7 @@ const roleName = roleRef.current.value;
     <h3>Add Role</h3>
     <div>
       <label htmlFor="roleName">Role Name:</label>
-      <input type="text" id="roleName" ref={roleRef}/>
+      <input type="text" className="inputRole" id="roleName" ref={roleRef}/>
     </div>
 
     <div>

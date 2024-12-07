@@ -3,6 +3,9 @@
   margin: 0;
 }
 
+input{
+  color:#333333;
+}
 .login-container {
   display: flex;
   justify-content: center;

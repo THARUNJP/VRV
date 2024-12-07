@@ -135,3 +135,19 @@
     width: 100%;
   }
 }
+ .inputRole{
+  background-color: white;
+}
+/* .checkBox{
+  background-color: white;
+  color: white;
+} */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
