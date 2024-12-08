@@ -153,7 +153,7 @@ if(is_updated === "notValidRole"){
               <th>email</th>
               <th>status</th>
             {role.read && role.edit && role.delete ? <th>Role</th> : null }
-              {role.edit || role.delete ?  <th>Actions</th>:null }
+              {role.edit || role.delete ?  <th>Action</th>:null }
             </tr>
           </thead>
           <tbody>
