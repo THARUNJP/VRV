@@ -138,3 +138,38 @@
  .inputRole{
   background-color: white;
 }
+.add-role-form label input[type="checkbox"] {
+  appearance: none;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.add-role-form label input[type="checkbox"]:checked {
+  border-color: #007bff;
+  background-color: white;
+}
+
+.add-role-form label input[type="checkbox"]:checked::after {
+  content: '✔';
+  font-size: 16px;
+  color: #007bff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.add-role-form label input[type="checkbox"]:hover {
+  border-color: #007bff;
+}
+
+.add-role-form label input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 3px #007bff;
+}

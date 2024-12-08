@@ -82,7 +82,7 @@ function deleteUserById(name,id) {
   if (isConfirmed) {
 const is_deleted = deleteUser(id);
   is_deleted ?? alert(`${name}'s account has not deleted.`)   
-setData(fetchAllData)
+setData((prev)=>prev.filter((e)=>e.id !== id));
   } 
 }
 

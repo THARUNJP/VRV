@@ -44,6 +44,8 @@ const roleName = roleRef.current.value;
 
 
         if(confirm) window.history.back()
+          {/* You might wonder why i used  window.history.back() instead useNvaigate beacuse history.back method preserves the 
+  useLocation object */}
     
     }
 
@@ -86,7 +88,9 @@ const roleName = roleRef.current.value;
     </div>
 
     <div className="form-actions">
-  <button onClick={() => window.history.back()} className="back-button">Back</button>
+  <button onClick={() => window.history.back()} className="back-button">Back</button> 
+  {/* You might wonder why i used  window.history.back() instead useNvaigate beacuse history.back method preserves the 
+  useLocation object */}
   <button onClick={handleRoleSubmit} className="save-button">Save</button>
   <button onClick={CancelFunction} className="cancel-button">Cancel</button>
 </div>
